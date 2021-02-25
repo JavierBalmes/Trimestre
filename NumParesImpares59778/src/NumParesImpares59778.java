@@ -14,15 +14,24 @@ public class NumParesImpares59778 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int numero = 0;
+        int total = 0;
+        int numero1 = 0;
         int numero2 = 0;
-        numero = +numero;
-        while(numero2 <= 100){
         
-        System.out.println(numero+numero2);
-          numero=numero+numero2;     
-          numero2++;          
+        while(total <= 100){
+        
+        if(total % 2 == 0){
+            numero1 = total +numero1;
+            
+        } else{
+            numero2 = total + numero2;
+            
+        } 
+        total++;
+           
         }
+        System.out.println("pares: " + numero1);
+        System.out.println("impares : " +  numero2);
             
                 
                 
