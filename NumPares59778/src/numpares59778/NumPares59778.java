@@ -18,7 +18,7 @@ public class NumPares59778 {
         int numero = 0;
         
         numero = +numero;
-        while (numero <= 84){
+        while (numero <= 94){
             if (numero % 2 == 0){
                 System.out.println(numero);
         }
