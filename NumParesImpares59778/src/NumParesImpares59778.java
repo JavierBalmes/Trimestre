@@ -15,11 +15,13 @@ public class NumParesImpares59778 {
      */
     public static void main(String[] args) {
         int numero = 0;
+        int numero2 = 0;
         numero = +numero;
-        while(numero <= 100){
-            numero = numero + 1;
-            System.out.println(numero);
-          numero++;          
+        while(numero2 <= 100){
+        
+        System.out.println(numero+numero2);
+          numero=numero+numero2;     
+          numero2++;          
         }
             
                 
