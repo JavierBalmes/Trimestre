@@ -17,94 +17,41 @@ public class JavaApplication21 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
-    }
-        Scanner leer = new Scanner(System.in);
-        String text=null;
-        int hora;
+     Scanner entrada = new Scanner(System.in);
 
         System.out.println("Escribe la hora para saber tu horario");
-        hora = leer.nextInt();
+        int hora = entrada.nextInt();
         
-        if(hora <= 24){
-       switch (hora) {
-           case 0:
-               text="dormir";
-               break;
-           case 1:
-               text="dormir";
-               break;
-           case 2:
-               text="dormir";
-               break;    
-           case 3:
-               text="dormir";
-               break;    
-           case 4:
-               text="dormir";
-               break;       
-           case 5:
-               text="dormir";
-               break;
-           case 6:
-               text="Despertarse";
-               break;
-           case 7:
-               text="lavarse los dientes y arreglarse";
-               break;
-           case 8:
-               text="entrar a clases en linea";
-               break;
-            case 9:
-               text="Estar en clases;
-               break;
-            case 10:
-               text="Estar en clases";
-               break; 
-            case 11:
-               text="estar en clases";
-               break;
-            case 12:
-               text="estar en clases";
-               break;
-            case 13:
-               text="estar en clases";
-               break;
-            case 14:
-               text="comer";
-               break;
-            case 15:
-               text="estudiar y leer un poco";
-               break;
-            case 16:
-               text="hacer ejercicio";
-               break; 
-            case 17:
-               text="hacer ejercicio";
-               break;
-            case 18:
-               text="estar en la computadora jugnado lol";
-               break;
-            case 19:
-               text="estar en la computadora jugando lol";
-               break; 
-            case 20:
-               text="estar en la computadora jugando lol";
-               break;
-            case 21:
-               text="cenar";
-               break;
-            case 22:
-               text="estar en la computadora jugando lol";
-               break;
-            case 23:
-               text="estar en el telefono hasta dormirse";
-               break;
-            case 24:
-               text="dormir";
-               break;
+        if(hora >= 1 && hora <= 24){
+            if(hora == 6){
+                System.out.println("Despertar a las " + hora + " de la mañana");
+            } else if(hora == 7){
+                System.out.println("Entrar a clase de administracion a las " + hora + " de la mañana");
+            } else if(hora >= 8 && hora < 10){
+                System.out.println("Entrar a clases de organizacion Computacional desde las 8 de la mañana hasta las 10 de la mañana");
+            } else if(hora >= 10 && hora < 12){
+                System.out.println("Entrar a clase de Fisica desde las 10 de la mañana hasta las 12 de la mañana");
+            } else if(hora == 12){
+                System.out.println("Entrar a la clase de Herramientas a las " + hora + " de la tarde");
+            } else if(hora >= 13 && hora < 15){
+                System.out.println("Estudiar y hacer tarea Desde la 1 pm hasta a las 3 pm");
+            } else if(hora == 15){
+                System.out.println("Comer a las 3 de la tarde");
+            } else if(hora >= 16 && hora < 18 ){
+                System.out.println("Estudiar un poco màs");
+            } else if(hora >= 18 && hora < 20){
+                System.out.println("Entrenar y hacer ejercicio desde las 6 de la tarde hasta las 8 de la noche");
+            } else if(hora == 20){
+                System.out.println("Cenar a partir de las 8 de la noche");
+            } else if(hora >= 21 && hora < 23){
+                System.out.println("Jugar lol con amigos");
+            } else if((hora >= 23 && hora <= 24) || (hora >= 1 && hora < 6)){
+                System.out.println("Dormir desde las 11 de la noche, hasta las 6 de la mañana");
+            }
+        } else {
+            System.out.println("Porfavor introduce una hora correcto, de 1 a 24 horas");   
              
        }
     }
-    
-}
+    }
+
