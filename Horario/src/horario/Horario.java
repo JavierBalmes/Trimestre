@@ -19,6 +19,7 @@ public class Horario {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
         System.out.println("Introduce la hora en formato de 24 horas para saber tu horario");
+        
        int hora = entrada.nextInt();
        
        if(hora >= 1 && hora <= 24){
